@@ -300,7 +300,7 @@ div.circleBehind a:hover:after
     opacity: 0;
     visibility: hidden;
     color: #FFFFFF;
-    font-size: 132px;
+    font-size: 90px;
     line-height: 110px;
     font-weight: 900;
     font-kerning: none;
@@ -359,3 +359,30 @@ div.circleBehind a:hover:after
     opacity: 1;
     visibility: visible;
   }
+
+#introduce{
+	position: absolute;
+	display: grid;
+    place-items: center;
+	top: 0;
+	right: 20px;
+	width: 180px;
+	height: 100%;
+	z-index: 10000000;
+	font-size: 20px;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: azure;
+}
+
+#introduce:hover{
+	animation: hideDiv 0.5s forwards;
+}
+
+@keyframes hideDiv {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
