@@ -5,15 +5,15 @@
       var color = colorText.innerHTML;
       
       if (color == "红树林生态系统") {
-        window.open('#');
+        window.location.href = "../level_three/environment_mangrove.html";
       } else if (color == "浅海陆架区生态系统") {
-        window.open('#');
+        window.location.href = "../level_three/environment_shallow sea.html";
       } else if (color =="热液喷口生态系统") {
-        window.open('#');
+        window.location.href = "../level_three/environment_hydrothermal.html";
       } else if (color == "珊瑚礁生态系统"){
-		window.open('#');	
+		window.location.href = "../level_three/environment_coral.html";	
 	  }	else if (color == "深海生态系统"){
-		window.open('https://lexue.bit.edu.cn/');	
+		window.location.href = "../level_three/environment_deep sea.html";	
 	  }
     }
 
