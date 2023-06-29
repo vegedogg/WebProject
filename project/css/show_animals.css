@@ -6,7 +6,8 @@ body {
 }
 
 body {
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 
@@ -77,8 +78,9 @@ div.circleBehind a:hover:after
 .scroll-animations-example {
     /* position: fixed;
     top: -5vh; */
+
     > .scrollsection {
-        padding: 5vh 50vh 20vh 10vmax;
+        padding: 2vh 50vh 20vh 10vmax;
         min-width: 200vh;
     }
 
@@ -111,8 +113,9 @@ div.circleBehind a:hover:after
         text-indent: 2em;
         font-size: 1.7vh;
         transition: opacity 0.5s ease;
-        background: #185187;
-        color: white;
+        /* background: #185187; */
+        background: lightgray;
+        color: black;
         padding: 5%;
     }
     > .scrollsection > .item.-big.-horizontal p{
@@ -130,23 +133,13 @@ div.circleBehind a:hover:after
 
     > .scrollsection > .item div:nth-child(3) {
         /* background-color: red; */
-        margin-left: 12px;
+        margin-left: 30px;
         height: 18vh;
-        border-left: solid 3px #185187;
+        border-left: solid 3px lightgray;
         opacity: 0;
         transition: opacity 0.5s ease;
     }
 
-    > .scrollsection > .item div:nth-child(4) {
-        position: relative;
-        background-color:#185187;
-        height: 15px;
-        width: 15px;
-        margin-left: 6px;
-        border-radius: 50%;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
     > .scrollsection > .item.-normal.-horizontal div:nth-child(3){
         height: 10vh;
     }
