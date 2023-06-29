@@ -4,21 +4,21 @@
       var colorText = document.getElementById('colorText');
       var color = colorText.innerHTML;
       
-      if (color == "红树林生态系统") {
+      if (color == "红树林") {
         window.location.href = "../level_three/environment_mangrove.html";
-      } else if (color == "浅海陆架区生态系统") {
+      } else if (color == "浅海陆架区") {
         window.location.href = "../level_three/environment_shallow sea.html";
-      } else if (color =="热液喷口生态系统") {
+      } else if (color =="热液区") {
         window.location.href = "../level_three/environment_hydrothermal.html";
-      } else if (color == "珊瑚礁生态系统"){
+      } else if (color == "珊瑚礁"){
 		window.location.href = "../level_three/environment_coral.html";	
-	  }	else if (color == "深海生态系统"){
+	  }	else if (color == "深海区"){
 		window.location.href = "../level_three/environment_deep sea.html";	
 	  }
     }
 
 	var Text = document.getElementById("colorText");
-    var texts = ["红树林生态系统","浅海陆架区生态系统","热液喷口生态系统","珊瑚礁生态系统","深海生态系统"];
+    var texts = ["红树林","浅海陆架区","热液区","珊瑚礁","深海区"];
 	var currentIndex = 0;
 	
  	setInterval(function() {

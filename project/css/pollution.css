@@ -13,22 +13,24 @@ body {
 /* 导航栏样式 */
 div.container
 {
-    font-family: Raleway;
-    margin: 0 auto;
-	padding: 3vh 8vw;
-    z-index: 1;
+  font-family: Raleway;
+  margin: 0 auto;
+  padding: 3vh 8vw;
+  z-index: 1;
+  position: relative;
+  mix-blend-mode: screen;
 }
 
 div.container a
 {
-    color: #FFF;
-    text-decoration: none;
-    font: 20px Raleway;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
+  color: #FFF;
+  text-decoration: none;
+  font: 20px Raleway;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .blue
@@ -44,7 +46,7 @@ div.circleBehind a:before, div.circleBehind a:after
     left: 50%;
     width: 50px;
     height: 50px;
-    border: 4px solid gray;
+    border: 4px solid rgb(255, 0, 0);
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     border-radius: 50%;
     background: transparent;
@@ -81,10 +83,10 @@ div.circleBehind a:hover:after
   font-family: "Open Sans", sans-serif;
 }
 
-.bg {
+.bg1 {
   position: fixed;
   top: 3rem;
-  left: -10rem;
+  left: -15rem;
 }
 
 .bg2 {
@@ -108,7 +110,7 @@ main > div span {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 1rem;
-  color: #717171;
+  color: #ffffff;
 }
 
 main > div h1 {
@@ -116,8 +118,10 @@ main > div h1 {
   letter-spacing: 0.8px;
   font-weight: 900;
   font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
-  background-color: #005baa;
-  background-image: linear-gradient(45deg, #005baa, #000000);
+  /* background-color: #005baa;
+  background-image: linear-gradient(45deg, #005baa, #000000); */
+  background-color: #ffffff;
+  background-image: linear-gradient(45deg, #ffffff, #c5bebe);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -128,7 +132,7 @@ main > div h1 {
 
 main > div hr {
   display: block;
-  background: #005baa;
+  background: #ffffff;
   height: 0.25rem;
   width: 6.25rem;
   border: none;
@@ -137,6 +141,8 @@ main > div hr {
 
 main > div p {
   line-height: 1.6;
+  color: white;
+  text-indent: 2em;
 }
 
 main a {
@@ -166,7 +172,7 @@ main a {
 
 .swiper-slide {
   width: 18.75rem;
-  height: 28.125rem;
+  height: 26.125rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -175,7 +181,6 @@ main a {
 
 .swiper-slide h2 {
   color: #fff;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.4;
@@ -226,25 +231,19 @@ main a {
 
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1515309025403-4b0184873cef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80")
+    url(../images/冰川融化.jpg)
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+    url(../images/捕鲸1.jpg)
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
-      no-repeat 50% 50% / cover;
-}
-
-.swiper-slide--five {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1570481662006-a3a1374699e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80")
+    url(../images/海岸垃圾.jpg)
       no-repeat 50% 50% / cover;
 }
 
@@ -271,5 +270,13 @@ main a {
 }
 
 
-
+/* 背景图片 */
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0; 
+  object-fit: cover;
+  opacity: 1;
+}
 

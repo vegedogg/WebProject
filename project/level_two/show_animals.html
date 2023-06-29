@@ -7,77 +7,67 @@
 </head>
 
 <body>
+    <img src="../images/水下1.jpg" class="bg" id="bg"/>
     <!-- 导航栏 -->
     <div class="container blue circleBehind">
-        <a>主页</a>
-        <a>海洋环境</a>
-        <a>濒危生物</a>
-        <a>海洋污染</a>
+        <a href="../index.html">主页</a>
+        <a href="./environment.html">海洋环境</a>
+        <a style="color: rgb(255, 0, 0); font-weight: bold;" href="./show_animals.html">濒危生物</a>
+        <a href="./pollution.html">海洋污染</a>
       </div>
 
     <!-- 图片 -->
     <div class='scroll-animations-example' data-scroll-container>
         <div class='scrollsection' data-scroll-section>
             <div class='item -normal -horizontal' data-scroll data-scroll-speed="2">
-                <img class='image' src='../images/Great Hammerhead.jpg'>
+                <img class='image' src='../images/Great Hammerhead.jpg' onclick="showText(0);">
                 <h1>Great Hammerhead(大双髻鲨)</h1>
-                <div></div>
-                <p>中华鲟（学名：Acipenser sinensis；英文名：Chinese Sturgeon）：是硬骨鱼纲、鲟科的鱼类。常见个体体长0.4-1.3米，体重50-300千克；最大个体体长5米，体重可达600千克。是中国长江中最大的鱼，故有“长江鱼王”之称。体呈纺锤形，头尖吻长，口前有4条吻须，口位在腹面，有伸缩性，并能伸成筒状，体被覆五行大而硬的骨鳞，背面一行，体侧和腹侧各两行。尾鳍为歪尾型，偶鳍具宽阔基部，背鳍与臀鳍相对。腹鳍位于背鳍前方，鳍及尾鳍的基部具棘状鳞，肠内具螺旋瓣，肛门和泄殖孔位于腹鳍基部附近，输卵管的开口与卵巢远离。</p>
-            </div>
+           </div>
             <div class='item -small -horizontal' data-scroll data-scroll-speed="4">
-                <img class='image' src='../images/Chinese Sturgeon.jpg'>
+                <img class='image' src='../images/Chinese Sturgeon.jpg' onclick="showText(1);">
                 <h1>中华鲟</h1>
-                <div></div>
-                <p>中华鲟（学名：Acipenser sinensis；英文名：Chinese Sturgeon）：是硬骨鱼纲、鲟科的鱼类。常见个体体长0.4-1.3米，体重50-300千克；最大个体体长5米，体重可达600千克。是中国长江中最大的鱼，故有“长江鱼王”之称。体呈纺锤形，头尖吻长，口前有4条吻须，口位在腹面，有伸缩性，并能伸成筒状，体被覆五行大而硬的骨鳞，背面一行，体侧和腹侧各两行。尾鳍为歪尾型，偶鳍具宽阔基部，背鳍与臀鳍相对。腹鳍位于背鳍前方，鳍及尾鳍的基部具棘状鳞，肠内具螺旋瓣，肛门和泄殖孔位于腹鳍基部附近，输卵管的开口与卵巢远离。</p>
             </div>
             <div class='item -big -horizontal' data-scroll data-scroll-speed="1">
-                <img class='image' src='../images/Green Sawfish.jpg'>
+                <img class='image' src='../images/Green Sawfish.jpg' onclick="showText(2);">
                 <h1>Green Sawfish</h1>
-                <div></div>
-                <p>中华鲟（学名：Acipenser sinensis；英文名：Chinese Sturgeon）：是硬骨鱼纲、鲟科的鱼类。常见个体体长0.4-1.3米，体重50-300千克；最大个体体长5米，体重可达600千克。是中国长江中最大的鱼，故有“长江鱼王”之称。体呈纺锤形，头尖吻长，口前有4条吻须，口位在腹面，有伸缩性，并能伸成筒状，体被覆五行大而硬的骨鳞，背面一行，体侧和腹侧各两行。尾鳍为歪尾型，偶鳍具宽阔基部，背鳍与臀鳍相对。腹鳍位于背鳍前方，鳍及尾鳍的基部具棘状鳞，肠内具螺旋瓣，肛门和泄殖孔位于腹鳍基部附近，输卵管的开口与卵巢远离。</p>
             </div>
             <div class='item -small -horizontal' data-scroll data-scroll-speed="3">
-                <img class='image' src='../images/Hawksbill Turtle.jpg'>
+                <img class='image' src='../images/Hawksbill Turtle.jpg' onclick="showText(3);">
                 <h1>Hawksbill Turtle</h1>
-                <div></div>
             </div>
             <div class='item -normal -horizontal' data-scroll data-scroll-speed="2">
-                <img class='image' src='../images/Sand Tiger Shark.jpg'>
+                <img class='image' src='../images/Sand Tiger Shark.jpg' onclick="showText(4);">
                 <h1>Sand Tiger Shark</h1>
-                <div></div>
             </div>
 
             <div class='item -small -horizontal' data-scroll data-scroll-speed="4">
-                <img class='image' src='../images/Bowmouth Guitarfish.jpg'>
+                <img class='image' src='../images/Bowmouth Guitarfish.jpg' onclick="showText(5);">
                 <h1>Bowmouth Guitarfish</h1>
-                <div></div>
             </div>
             <div class='item -big -horizontal' data-scroll data-scroll-speed="1">
-                <img class='image' src='../images/Oceanic Whitetip Shark.jpg'>
+                <img class='image' src='../images/Oceanic Whitetip Shark.jpg' onclick="showText(6);">
                 <h1>Oceanic Whitetip Shark</h1>
-                <div></div>
             </div>
             <div class='item -small -horizontal' data-scroll data-scroll-speed="2">
-                <img class='image' src='../images/Spoon-billed Sandpiper.jpg'>
+                <img class='image' src='../images/Spoon-billed Sandpiper.jpg' onclick="showText(7);">
                 <h1>Spoon-billed Sandpiper</h1>
-                <div></div>
             </div>
             <div class='item -big -horizontal' data-scroll data-scroll-speed="4">
-                <img class='image' src='../images/Chinese Crested Tern.jpg'>
+                <img class='image' src='../images/Chinese Crested Tern.jpg' onclick="showText(8);">
                 <h1>Chinese Crested Tern</h1>
-                <div></div>
             </div>
             </div>
         </div>
 
-    <!-- 页面下方的波浪 -->
-    <div class="ocean">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
+    <div class="info" id="info">
+        <div class="title">
+            <h1 id="name"></h1>
+            <hr>
+        </div>
+        <div class="text">
+            <p id="intro"></p>
         </div>
     </div>
-
     <!-- js -->
     <script src='../js/show_animals.js'></script> 
 </body>
