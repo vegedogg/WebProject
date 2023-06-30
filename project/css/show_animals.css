@@ -215,20 +215,20 @@ div.circleBehind a:hover:after
         height: 100%;
         position: absolute;
         /* background-color: blue; */
-        text-align: center;
+        text-align: right;
     }
     .title > h1 {
         /* background-color: red; */
         margin-top: 1.5rem;
-        margin-right: -2em;
+        white-space: nowrap;
     }
     .title > hr {
         display: block;
         background: #ffffff;
         height: 0.25rem;
-        width: 3.25rem;
+        width: 5.25rem;
         border: none;
-        margin: 1.125rem 0 1.875rem 4.875rem;
+        margin: 1.125rem 0 1.875rem 6.5rem;
     }
 
     .text {
@@ -244,7 +244,7 @@ div.circleBehind a:hover:after
         margin: 1.5rem;
         margin-right: 3rem;
         text-indent: 2em;
-        line-height: 1.5em;
+        line-height: 1.6rem;
     }
     
 }

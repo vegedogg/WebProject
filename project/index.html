@@ -1,386 +1,53 @@
-<!DOCTYPE html>
-<html lang="en-us" class="no-js">
-
+<html>
 <head>
-    <meta charset="utf-8">
     <title>主页</title>
-    <meta name="description" content="The description should optimally be between 150-160 characters.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="ThemeHelite">
-    <link rel="stylesheet" type="text/css" href="css/style-multi-scroll.css">
- <style>
-    /* 进度条样式 */
-    #progress-bar {
-      width: 550px;
-      height: 80px;
-      background-color: #E0E0E0;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-    }
-    
-    #progress-bar span {
-      display: block;
-      height: 100%;
-      background-color: #0099CC;
-      transition: width 0.3s;
-    }
-    
-    #progress-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-family: Arial, sans-serif;
-      font-size: 24px;
-      font-weight: bold;
-      color: #333333;
-    }
-  </style>
-  <script>
-    // 页面加载进度
-    document.onreadystatechange = function() {
-      var progressBar = document.getElementById('progress-bar');
-      var progress = document.getElementById('progress-bar').querySelector('span');
-      var progressText = document.getElementById('progress-text');
-      
-      var totalBytes = document.documentElement.scrollHeight;
-      var currentBytes = document.documentElement.scrollTop + window.innerHeight;
-      var progressPercentage = (currentBytes / totalBytes) * 100;
-      
-      if (document.readyState === 'complete') {
-        progressBar.style.display = 'none';
-      } else {
-        progress.style.width = progressPercentage + '%';
-        progressText.innerText = '页面加载中 ' + Math.floor(progressPercentage) + '%';
-      }
-    };
-  </script>
+    <link rel='stylesheet' href='./css/index.css' />
 </head>
 
 <body>
-  <div id="progress-bar">
-    <span></span>
-    <div id="progress-text">页面加载中 0%</div>
-  </div>
-        <div class="ms-left">
-            <div class="ms-section" id="left1">
-                <div class="slideshow-home-left"> </div>
-                <div class="intro">
-                    <h1 class="open-anim opacity-0">保护海洋环境</h1>
-                    <p class="open-anim opacity-0">从调节地球气候、提供栖息地、产生氧气、支持全球食物链到提供经济利益，海洋为地球和人类的生存发展作出了巨大贡献。<br>保护好海洋生态系统，维护地球的生命之源，是我们每个人共同的责任。<br><strong>下滑</strong>获取更多信息</p><a href="level_two/environment.html" class="light-btn open-anim opacity-0">进入海洋世界</a>
-                </div>
-                <div class="scroll-indicator"><a id="indicator-scroll" data-target="right2"><i
-                            class="icon ion-ios-arrow-down"></i></a></div>
-            </div>
-            <div class="ms-section" id="left2">
-                <div id="invert-slideshow" class="slideshow-about"></div>
-            </div>
-            <div class="ms-section" id="left3">
-                <div class="text-left-block">
-                    <div class="left-center-text split-section">
-                        <div class="left-center-part">
-                            <h2>防治海洋污染</h2>
-                            <p>人类生产和生活过程中，产生的大量污染物不断地通过各种途径进入海洋，对海洋生物资源、海洋开发、海洋环境质量产生不同程度的危害最终又将危害人类自身，主要危害有以下几个方面，一是局部海域水体富营养化；二是由海域至路域使生物多样性急剧下降；三是海洋生物死亡后产生的毒素通过食物链毒害人体；四是破坏海滨旅游景区的环境质量，使之失去应有价值。</p>
-                            <div id="carousel-services" class="carousel slide" data-interval="6000"
-                                data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel-services" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-services" data-slide-to="1"></li>
-                                    <li data-target="#carousel-services" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="active item">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-6 col-lg-6 block-services"><span
-                                                    class="icon-services icon ion-ios-mic-outline"></span>
-                                                <h3>少用塑料制品</h3>
-                                                <p>海洋塑料垃圾会直接威胁海洋生物的生存，鱼类、海龟、海鸟等海洋动物会因误食塑料碎片或被“幽灵渔具”缠绕而窒息死亡。并且海洋塑料垃圾会降低海底沉积物的质量，改变海洋生境，破坏海洋生态系统的稳定和平衡。
-                                                </p>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-lg-6 block-services"><span
-                                                    class="icon-services icon ion-ios-flask-outline"></span>
-                                                <h3>节能减碳</h3>
-                                                <p>节能减排有助于减少温室气体排放，减缓全球气候变化速度，降低海洋酸化的风险，从而维护海洋生态系统的稳定性和健康，节能减排还能减少海平面上升、海洋温度升高等不利影响，维护珊瑚礁、海草床和海洋生物多样性的生存。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-6 col-lg-6 block-services"><span
-                                                    class="icon-services icon ion-ios-navigate-outline"></span>
-                                                <h3>防治水体富营养化</h3>
-                                                <p>水体富营养化是指水体中营养物质（如氮、磷等）过多积聚，导致藻类和其他植物过度生长的现象。防治水体富营养化的关键措施包括水体生物修复、保护湿地、推广生态农业，引入适当的水生植物和有益的微生物等方法。
-                                                </p>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-lg-6 block-services"><span
-                                                    class="icon-services icon ion-ios-pulse"></span>
-                                                <h3>合理捕捞</h3>
-                                                <p>合理捕捞确保渔业资源的可持续利用，避免资源枯竭的问题，为沿海地区提供稳定的收入来源。而且合理捕捞有助于维护海洋生态系统的平衡和健康，减少对非目标物种和生态系统的影响，维护生物链的稳定。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-6 col-lg-6 block-services"><span
-                                                    class="icon-services icon ion-ios-settings"></span>
-                                                <h3>减少海洋垃圾排放</h3>
-                                                <p>海洋食物链是地球上众多物种的主要食物来源。海洋垃圾污染会对食物链造成负面影响，从而威胁到整个食物网的稳定性。减少垃圾排放可以保持食物链的健康，确保海洋生物有足够的生存空间。
-                                                </p>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-lg-6 block-services"><span
-                                                    class="icon-services icon ion-ios-color-wand-outline"></span>
-                                                <h3>净滩行动</h3>
-                                                <p>净滩行动致力于清除海滩和海洋中的垃圾，包括塑料、玻璃、金属等各种废弃物。这些垃圾对海洋生物和生态系统造成严重危害，如误食、缠绕和破坏栖息地。通过清除海洋垃圾，有助于保护海洋生物的生存环境，减少对海洋生物的伤害。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><a class="carousel-control left" href="#carousel-services" data-slide="prev">
-                                    <span class="icon-prev"></span> </a> <a class="carousel-control right"
-                                    href="#carousel-services" data-slide="next"> <span class="icon-next"></span> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ms-section" id="left4">
-                <div class="portfolio my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
-                    <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope=""
-                        itemtype="http://schema.org/ImageObject"> <a href="images/gallery-1.jpg"
-                            class="gallery-link small" data-image="images/gallery-1.jpg" itemprop="contentUrl"
-                            data-size="1920x1280"> <img src="images/gallery-1.jpg" itemprop="thumbnail"
-                                alt="This is my work" class="img-responsive gallery-img small-square"> </a>
-                    </figure>
-                    <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope=""
-                        itemtype="http://schema.org/ImageObject"> <a href="images/gallery-2.jpg"
-                            class="gallery-link small" data-image="images/gallery-2.jpg" itemprop="contentUrl"
-                            data-size="1920x1280"> <img src="images/gallery-2.jpg" itemprop="thumbnail"
-                                alt="This is my work" class="img-responsive gallery-img small-square"> </a>
-                    </figure>
-                    <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope=""
-                        itemtype="http://schema.org/ImageObject"> <a href="images/gallery-3.jpg"
-                            class="gallery-link small" data-image="images/gallery-3.jpg" itemprop="contentUrl"
-                            data-size="1920x1280"> <img src="images/gallery-3.jpg" itemprop="thumbnail"
-                                alt="This is my work" class="img-responsive gallery-img small-square"> </a>
-                       
-                    </figure>
-                    <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope=""
-                        itemtype="http://schema.org/ImageObject"> <a href="images/gallery-4.jpg"
-                            class="gallery-link small" data-image="images/gallery-4.jpg" itemprop="contentUrl"
-                            data-size="1920x1280"> <img src="images/gallery-4.jpg" itemprop="thumbnail"
-                                alt="This is my work" class="img-responsive gallery-img small-square"> </a>
-                        
-                    </figure>
-                    <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope=""
-                        itemtype="http://schema.org/ImageObject"> <a href="images/gallery-5.jpg"
-                            class="gallery-link small" data-image="images/gallery-5.jpg" itemprop="contentUrl"
-                            data-size="1920x1280"> <img src="images/gallery-5.jpg" itemprop="thumbnail"
-                                alt="This is my work" class="img-responsive gallery-img small-square"> </a>
-                        
-                    </figure>
-                    <figure class="col-xs-12 col-sm-6 col-lg-6" itemprop="associatedMedia" itemscope=""
-                        itemtype="http://schema.org/ImageObject"> <a href="images/gallery-6.jpg" class="gallery-link small" data-image="images/gallery-6.jpg" itemprop="contentUrl"
-                            data-size="1920x1280"> <img src="images/gallery-6.jpg" itemprop="thumbnail"
-                                alt="This is my work" class="img-responsive gallery-img small-square"> </a>
-                       
-                    </figure>
-                </div>
-            </div>
-            <div class="ms-section" id="left5">
-                <div class="text-left-block">
-                    <div class="left-center-text split-section">
-                        <div class="left-center-part">
-                            <h2>联系我们</h2>
-                            <p class="subtitle"><br>通过 
-                                <strong>电子邮箱</strong> : <a href="#"
-                                    class="phone-mail-link">2628284022@qq.com</a></p>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-lg-12">
-                                    <form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-lg-12 display-none">
-                                                <div class="form-group"> <input type="text" id="checking"
-                                                        class="form form-control" placeholder="Leave this field empty"
-                                                        onfocus="this.placeholder=''"
-                                                        onblur="this.placeholder='Leave this field empty'"
-                                                        name="checking" data-name="Checking"> </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-lg-6">
-                                                <div class="form-group"> <input type="text" id="name"
-                                                        class="form form-control" placeholder="姓名*"
-                                                        onfocus="this.placeholder=''" onblur="this.placeholder='姓名*'"
-                                                        name="name" data-name="Name" required=""> </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-lg-6">
-                                                <div class="form-group"> <input type="email" id="email"
-                                                        class="form form-control" placeholder="邮箱地址*"
-                                                        onfocus="this.placeholder=''"
-                                                        onblur="this.placeholder='邮箱地址*'" name="email-address"
-                                                        data-name="Email Address" required=""> </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-lg-6">
-                                                <div class="form-group"> <input type="text" id="company"
-                                                        class="form form-control" placeholder="学校名称"
-                                                        onfocus="this.placeholder=''"
-                                                        onblur="this.placeholder='学校名称'" name="company"
-                                                        data-name="Company" required=""> </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-lg-6">
-                                                <div class="form-group"> <input type="tel" id="phone"
-                                                        class="form form-control" placeholder="电话号*"
-                                                        onfocus="this.placeholder=''"
-                                                        onblur="this.placeholder='电话号*'" name="phone"
-                                                        data-name="Phone" required=""> </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-lg-12">
-                                                <div class="form-group"> <textarea id="text-area"
-                                                        class="form textarea form-control"
-                                                        placeholder="至少输入20个字*"
-                                                        onfocus="this.placeholder=''"
-                                                        onblur="this.placeholder='至少输入20个字*'"
-                                                        name="message" data-name="Text Area" required=""></textarea>
-                                                </div>
-                                            </div>
-                                        </div><button type="submit" id="valid-form" class="btn btn-color">向我们发送信息</button>
-                                    </form>
-                                    <div id="block-answer">
-                                        <div id="answer"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ms-right" id="right-part">
-            <div class="ms-section" id="right1">
-                <div class="slideshow-home-right">
-                    <div class="slideshow-overlay-right"></div>
-                </div>
-            </div>
-            <div class="ms-section" id="right2">
-                <div class="text-left-block">
-                    <div id="invert-text" class="left-center-text split-section">
-                        <div class="left-center-part">
-                            <h2>保护海洋生物</h2>
-                            <p>已知的海洋大型动物有300多种，主要包括海洋哺乳动物（鲸类、鳍足类和海牛类等大致130个现存物种）、鱼类、海龟、鸟类和头足类动物等，它们在海洋生态系统功能中发挥着关键作用。这些动物提高了初级生产力，在减缓气候变化方面发挥着天然碳汇的作用，是海洋环境健康的指示种与旗舰种，在保护海洋环境方面发挥重大作用，并通过对渔业和旅游业的影响提供食物和重要经济价值。然而，根据国际自然保护联盟(IUCN)的数据，由于工业化的直接或间接影响、航运交通、气候变化、过度捕捞以及从塑料到海洋噪声的污染等压力之下，约三分之一的海洋大型动物正面临灭绝的风险。加强对这些动物开展研究和保护工作已刻不容缓。
+    <img src="./images/水下1.jpg" class="bg" id="bg"/>
+    <!-- 导航栏 -->
+    <div class="container blue circleBehind">
+        <a style="color: rgb(255, 0, 0); font-weight: bold;" href="#">主页</a>
+        <a href="./level_two/environment.html">海洋环境</a>
+        <a href="./level_two/show_animals.html">濒危生物</a>
+        <a href="./level_two/pollution.html">海洋污染</a>
+      </div>
 
-  为确保海洋可持续发展，国际上已采取了一系列措施以加强海洋大型动物的研究和保护工作，例如中止捕鲸、设法恢复濒临灭绝的种群，以及在世界各地建立海洋保护区。《濒危野生动植物种国际贸易公约》（CITES）、《保护迁徙野生动物物种公约》（CMS）、《国际防止船舶造成污染公约》（MARPOL）和《伯尔尼公约》（《保护欧洲野生动物和自然栖息地公约》）等国际协定促进了多个国家在海洋珍稀动物保护方面的协调行动，并且通过加强科学研究对大多数濒危物种所面临的主要威胁进行了确定。然而，尽管如此，许多海洋大型动物种群数量仍然在持续减少。
+    <div class="title" id="title">
+        <span>关注</span>
+        <h1>海洋与海洋生物保护</h1>
+        <hr>
+        <p>从调节地球气候、提供栖息地、产生氧气、支持全球食物链到提供经济利益，海洋为地球和人类的生存发展作出了巨大贡献。保护好海洋生态系统，维护地球的生命之源，是我们每个人共同的责任。</p>
+    </div>
 
-  近期，有十余个国家制定了短期目标，计划到2025年前，对其管辖海域内的海洋空间资源总量进行可持续管理。联合国已宣布“海洋科学促进可持续发展十年”计划（简称“海洋十年”）。为达成海洋及海洋大型动物的保护目标，我们必须在综合海洋管理方面，大大增加高度受保护的海洋保护区数量和面积。此外，必须大幅减少直接捕捞强度。为了减少误捕，渔业捕捞过程中应限于使用可接受的网具或使用传统渔具。为避免海洋垃圾的产生，应禁止使用一次性塑料以防止垃圾进入海洋环境。应修订国际法，促进有责任性、包容性和以社区为基础的海洋旅游业，并推进对公海的充分监管。这些可行和有效的缓解措施与世界各国领导人宣布的承诺和责任空前一致。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ms-section" id="right3">
-                <div class="slideshow-services"></div>
-            </div>
-            <div class="ms-section" id="right4">
-                <div class="text-left-block">
-                    <div class="left-center-text split-section">
-                        <div class="left-center-part">
-                            <h2>小组成员</h2>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-lg-6 block-team">
-										<img src="images/member-1.jpg" alt=""
-                                        class="img-responsive team-member">
-                                    <h3>王俊朝</h3>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-lg-6 block-team">
-                                        <img src="images/member-2.jpg" alt=""
-                                        class="img-responsive team-member">
-                                    <h3>王鹏宇</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ms-section" id="right5">
+    <div class="content" id="content1">
+        <h2>保护海洋生物</h2>
+        <p>已知的海洋大型动物有300多种，主要包括海洋哺乳动物（鲸类、鳍足类和海牛类等大致130个现存物种）、鱼类、海龟、鸟类和头足类动物等，它们在海洋生态系统功能中发挥着关键作用。这些动物提高了初级生产力，在减缓气候变化方面发挥着天然碳汇的作用，是海洋环境健康的指示种与旗舰种，在保护海洋环境方面发挥重大作用，并通过对渔业和旅游业的影响提供食物和重要经济价值。然而，根据国际自然保护联盟(IUCN)的数据，由于工业化的直接或间接影响、航运交通、气候变化、过度捕捞以及从塑料到海洋噪声的污染等压力之下，约三分之一的海洋大型动物正面临灭绝的风险。加强对这些动物开展研究和保护工作已刻不容缓。 为确保海洋可持续发展，国际上已采取了一系列措施以加强海洋大型动物的研究和保护工作，例如中止捕鲸、设法恢复濒临灭绝的种群，以及在世界各地建立海洋保护区。《濒危野生动植物种国际贸易公约》（CITES）、《保护迁徙野生动物物种公约》（CMS）、《国际防止船舶造成污染公约》（MARPOL）和《伯尔尼公约》（《保护欧洲野生动物和自然栖息地公约》）等国际协定促进了多个国家在海洋珍稀动物保护方面的协调行动，并且通过加强科学研究对大多数濒危物种所面临的主要威胁进行了确定。然而，尽管如此，许多海洋大型动物种群数量仍然在持续减少。 近期，有十余个国家制定了短期目标，计划到2025年前，对其管辖海域内的海洋空间资源总量进行可持续管理。联合国已宣布“海洋科学促进可持续发展十年”计划（简称“海洋十年”）。为达成海洋及海洋大型动物的保护目标，我们必须在综合海洋管理方面，大大增加高度受保护的海洋保护区数量和面积。此外，必须大幅减少直接捕捞强度。为了减少误捕，渔业捕捞过程中应限于使用可接受的网具或使用传统渔具。为避免海洋垃圾的产生，应禁止使用一次性塑料以防止垃圾进入海洋环境。应修订国际法，促进有责任性、包容性和以社区为基础的海洋旅游业，并推进对公海的充分监管。这些可行和有效的缓解措施与世界各国领导人宣布的承诺和责任空前一致。</p>
+    </div>
 
+    <div class="content" id="content2">
+        <h2>防治海洋污染，从我做起</h2>
+        <p>少用塑料制品。海洋塑料垃圾会直接威胁海洋生物的生存，鱼类、海龟、海鸟等海洋动物会因误食塑料碎片或被“幽灵渔具”缠绕而窒息死亡。并且海洋塑料垃圾会降低海底沉积物的质量，改变海洋生境，破坏海洋生态系统的稳定和平衡。</p>
+        <p>节能减碳，绿色出行。节能减排有助于减少温室气体排放，减缓全球气候变化速度，降低海洋酸化的风险，从而维护海洋生态系统的稳定性和健康，节能减排还能减少海平面上升、海洋温度升高等不利影响，维护珊瑚礁、海草床和海洋生物多样性的生存。</p>
+        <p>净滩行动。净滩行动致力于清除海滩和海洋中的垃圾，包括塑料、玻璃、金属等各种废弃物。这些垃圾对海洋生物和生态系统造成严重危害，如误食、缠绕和破坏栖息地。通过清除海洋垃圾，有助于保护海洋生物的生存环境，减少对海洋生物的伤害。参与净摊行动，一起保护海洋。</p>
+    </div>
+
+    <div class="content" id="content3">
+        <h2>小组成员</h2>
+        <div>
+            <div class="imgs">
+                <img src="./images/member-1.jpg">
+                <h3>王俊朝</h3>
+            </div>
+            <div class="imgs">
+                <img src="./images/member-2.jpg">
+                <h3>王鹏宇</h3>
             </div>
         </div>
     </div>
-    <div id="info"><button class="close-newsletter"><i class="icon ion-close-round"></i></button>
-        <div class="content"> <img src="picture/logo-colored.png" alt="" class="brand-logo">
-            <p class="subtitle">Sign up to the PURE News before our launching on the 14th of August for the chance to
-                <strong>win a fabulous space flight into outer space for you & the person of your choice!</strong></p>
-            <div id="subscribe">
-                <form action="../php/notify-me-2.php" id="notifyMe" method="POST">
-                    <div class="form-group">
-                        <div class="controls"> <input type="text" id="mail-sub" name="email"
-                                placeholder="Click here to write your email" onfocus="this.placeholder=''"
-                                onblur="this.placeholder='Click here to write your email'"
-                                class="form-control email srequiredField"> <i class="fa fa-spinner opacity-0"></i>
-                            <button class="btn btn-lg submit">Get notified</button>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="block-message">
-            <div class="message">
-                <p class="notify-valid"></p>
-            </div>
-        </div>
-        <p class="spam-news"><i class="fa fa-lock"></i> We hate spam just as much as you do. Your email will stay
-            secret.</p>
-    </div>
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-        <!-- Background of PhotoSwipe. It's a separate element as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-            <!-- Container that holds slides. PhotoSwipe keeps only 3 of them in the DOM to save memory. Don't modify these 3 item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
-                        title="Share"></button> <button class="pswp__button pswp__button--fs"
-                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
-                        title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"> </button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"> </button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/jquery-1.12.3.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.multiscroll.js"></script>
-    <script src="js/vegas-multiscroll.js"></script>
-    <script src="js/js.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/photoswipe.js"></script>
-    <script src="js/photoswipe-ui-default.js"></script>
-    <script src="js/contact-me.js"></script>
-    <script src="js/notifyMe.js"></script>
-    <script src="js/main-multi-scroll.js"></script>
-    <script>(function (d, e, j, h, f, c, b) { d.GoogleAnalyticsObject = f; d[f] = d[f] || function () { (d[f].q = d[f].q || []).push(arguments) }, d[f].l = 1 * new Date(); c = e.createElement(j), b = e.getElementsByTagName(j)[0]; c.async = 1; c.src = h; b.parentNode.insertBefore(c, b) })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"); ga("create", "UA-60503361-1", "auto"); ga("send", "pageview");</script>
+
+    <div class="box"></div>
+    <script src="./js/index.js"></script>
 </body>
-
 </html>
