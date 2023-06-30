@@ -145,6 +145,7 @@ main {
 	margin: 0 auto;
     color: white;
     position: relative;
+    /* mix-blend-mode: difference; */
 }
 
 section {
